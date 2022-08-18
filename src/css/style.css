@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/home-background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #0b60a1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    padding: 12px 30px;
+    /* border-bottom: 1px solid; */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, .3);
+    z-index: 10;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fffefe;
+    outline: none;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.item-nav{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.item-nav:hover {
+    color: blue;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #b6ddff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid #008FFF;
+    color: #FAFAFA;
+}
+
+
+
+.titulo-sobre {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    padding-top: 9rem;
+}
+
+.sobre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.foto {
+    padding-bottom: 80px;
+    margin-right: 30px;
+    padding: 23px;
+    height: 415px;
+}
+
+.sobre img {
+    padding-bottom: 80px;
+    margin-right: 30px;
+}
+
+.sobre-empresa {
+    max-width: 700px;
+    padding: 40px 1px;
+}
+
+.sobre-empresa p {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.sobre-empresa p span {
+    font-size: 23px;
+}
+
+.tab {
+    width: 700px;
+    margin: 0px auto;
+    height: 500px;
+}
+  
+.tab input[type] {
+    display: none;
+}
+  
+.tab label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+  
+.tab label:hover,
+.tab input:checked + label {
+    background: #11396e;
+    color: #fff;
+}
+  
+.tabs {
+clear: both;
+perspective: 400px;
+-webkit-perspective: 400px;
+}
+  
+.tabs .content {
+    background: #0b60a1;
+    width: 700px;
+    position: absolute;
+    border: 5px solid #6da1b6;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform .5s;
+    z-index: 0;
+}
+  
+#tab1:checked ~ .tabs .content:nth-of-type(1),
+#tab2:checked ~ .tabs .content:nth-of-type(2),
+#tab3:checked ~ .tabs .content:nth-of-type(3),
+#tab4:checked ~ .tabs .content:nth-of-type(4) 
+  
+{
+    transform: rotateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.sobre-fabrica {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -15rem;
+    display: block;
+    padding-top: 70px;
+}
+
+.sobre-tecnologias {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    padding-top: 70px;
+}
+
+.sobre-contato {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    padding-top: 70px;
+}
+
+main.cards {
+    display: flex;
+    padding: 32px
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #4989bb;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+main.card section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 145px;
+    height: 70px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+.contato{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px 60px 70px;
+}
+
+.box-contato{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato h2 {
+    font-size: 50px;
+    color: #FAFAFA;
+    margin: 70px 50px 30px 50px;
+
+}
+
+.contacts-link {
+    display: flex;
+    gap: 60px;
+}
+
+.contacts-link img {
+    width: 50px;
+   
+}
+
+.image {
+    text-align: center;
+    max-width: 30px;
+}
+
+.formcontato__contacto {
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    padding: 5rem;
+}
+
+.formcontato__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.formcontato__form input, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+    
+
+.formcontato__botao {
+    background-color: #95c8ec;
+    color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.ativarCorBotao{
+    opacity: none;
+}
+
+.contato1 {
+    text-align: center
+}
+
+.bt-topo {
+    text-decoration: none;
+    color: #008FFF;
+    padding: 10px;
+    background-color: rgb(40, 70, 99);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* { 
+  font-family: 'Roboto', sans-serif;
+}
+
+body { 
+  background-color: #ececec;
+}
+
+details {
+  display: block; 
+  width: auto;
+  margin: 10px 0;
+}
+
+details p { 
+  padding-left: 30px;
+}
+
+summary {
+  display: flex; 
+  background: rgb(100, 32, 62);
+  background: radial-gradient(circle, rgb(47, 113, 199) 0%,   rgba(148,187,233,1) 100%);
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+   display: none;
+}
+
+summary:before {
+   content: "+";
+   font-size: 20px;
+   font-weight: bold;
+   margin: 0 5px;
+   padding: 0;
+   width: 20px;
+   text-align: center;
+}
+
+details[open] summary:before {
+  content: "-";
+}
+
+.texto {
+    background: radial-gradient(circle, rgb(47, 113, 199) 0%,   rgba(148,187,233,1) 100%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+.titulo-sobre {
+    flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 20px 100px 20px;
+        text-align: center;
+}
+    .sobre-empresa {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 20px 100px 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titulo-sobre {
+      padding: 85px;
+      width: 75%;
+      
+    }
+    .foto {
+        padding: 55px;
+        width: 1%;
+    }
+
+    .sobre-empresa {
+        padding: 20px;
+        width: 250%;
+    }
+
+    .tab {
+        padding: 100px;
+        width: 250%;
+    }
+
+    .formcontato__form {
+        width: 75%;
+    }
+  }
+  
